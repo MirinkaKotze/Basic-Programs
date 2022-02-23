@@ -1,4 +1,36 @@
 // // LESSON 25: INTRO TO JAVASCRIPT - SIMPLE PROGRAMS
+
+// WRAPPER CONTAINER-FUNCTION
+function wrapperInput() {
+    userInput = parseInt(prompt('Choose the number that is corresponding to the code you want to run: \n1. Age counter \n2. Calculating the perimeter of a square \n3. Calculating square area \n4. Travel Time \n5. Currency Converter \n6. How many 820MB files wll fit? \7. How many chocolate bars can you buy? \n8. Interest Calculator.'));
+    if (userInput === 1) {
+        age();
+    }
+    else if (userInput === 2) {
+      squarePerimeter();
+    }
+    else if (userInput === 3) {
+      circleArea();
+    }
+    else if (userInput === 4) {
+       onTime();
+    }
+    else if (userInput === 5) {
+        currencyConverter();
+    }    
+    else if (userInput === 6) {
+        flashDrive();
+    }   
+    else if (userInput === 7) {
+        chocolateBars();
+    }   
+    else if (userInput === 8) {
+       interestCalculator();
+    }   
+    
+}
+wrapperInput()
+
 // // 1. Request a user’s name and display the response “Hello, [name]”.
 const userName = prompt('Please enter your name:');
     console.log('Hello,' + ' ' + userName);
@@ -11,7 +43,7 @@ function age() {
     console.log('Your age is:' + ' ' + result);
 }
 
-age();
+// age();
 
 // // 3. Request a length of a side of a square from a user and display the perimeter of the square. 
 function squarePerimeter() {
@@ -30,7 +62,7 @@ function circleArea() {
     console.log('The area of the circle is: ' + areaRounded);
 }
 
-circleArea();
+// circleArea();
 
 // 5. Request a distance in km between the two cities from a user, and the time they want to cover it within. Count the speed needed to be on time. 
 function onTime() {
@@ -40,7 +72,7 @@ function onTime() {
     console.log('You need to drive at: ' + speed + 'km/hour.');
 }
 
-onTime();
+// onTime();
 
 // 6. Create a currency converter. A user types in USD and the program converts them to EUR. The exchange rate should be stored as a constant.
 function currencyConverter() {
@@ -50,7 +82,7 @@ function currencyConverter() {
     console.log('You have ' + convert + ' EUR');
 }
 
-currencyConverter();
+// currencyConverter();
 
 // 7. A user states a flash drive memory in GB. The program has to count how many 820MB files can be stored on this flash drive. 
 function flashDrive() {
@@ -61,7 +93,7 @@ function flashDrive() {
     console.log('You have ' + filesRounded + ', 820MB files.');
 }
 
-flashDrive();
+// flashDrive();
 
 // 8. A user types in an amount of money in a wallet and the price of one chocolate bar. The program counts how many chocolate bars the user can buy, and how much change will he/she have left. 
 function chocolateBars() {
@@ -73,7 +105,7 @@ function chocolateBars() {
     console.log ('You can buy ' + nrOfBarsRounded + ' chocolate Bars and will have ' + change + ' USD left over.');
 }
 
-chocolateBars();
+// chocolateBars();
 
 // 9. The user types in a sum of bank deposits for 2 months with a yearly interest rate of 5%. The program counts the sum of interest.
 function interestCalculator() {
@@ -89,4 +121,4 @@ function interestCalculator() {
     console.log('Your total savings after two months will be: ' + twoMonthsTotalRounded + ' USD.');
 }
 
-interestCalculator();
+// interestCalculator();
