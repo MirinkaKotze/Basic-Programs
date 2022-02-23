@@ -32,8 +32,8 @@ function wrapperInput() {
 wrapperInput()
 
 // // 1. Request a user’s name and display the response “Hello, [name]”.
-const userName = prompt('Please enter your name:');
-    console.log('Hello,' + ' ' + userName);
+// const userName = prompt('Please enter your name:');
+//     console.log('Hello,' + ' ' + userName);
 
 // // 2. Request a user’s year of birth, count his age, and display the result. Store the current year as a constant. 
 function age() {
