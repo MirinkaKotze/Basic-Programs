@@ -1,6 +1,8 @@
 # Basic-Programs
 Beetroot Academy - Lesson 25
 
+Live Page URL: https://mirinkakotze.github.io/Basic-Programs/
+
 Home assignment:
 
 1. Request a user’s name and display the response “Hello, [name]”.
